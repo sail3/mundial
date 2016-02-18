@@ -1,0 +1,7 @@
+web_params:
+  db.options:
+    driver: pdo_mysql
+    dbname: db_mumundial
+    host: localhost
+    user: root
+    password: root

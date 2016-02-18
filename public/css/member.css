@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+th, td, thead, tbody {margin:0;padding:0;}
+
+/* s:singup */
+.ContSingUpWrap {clear:both;}
+.ContSingUpBox {width:450px;}
+.ContSingUpBox h1 {height:auto;font:bold 24px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;overflow:hidden;}
+.ContSingUpBox h1 a.add, .ContSingUpBox h1 a:hover.add {position:absolute;margin-top:10px;font:normal 11px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;text-decoration:none;}
+.ContSingUpBox h1.singUpEnd {height:auto;padding-bottom:25px;font:bold 24px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.ContSingUpBox h1.singUpEnd span {color:#287cdb;}
+.ContSingUpBox h1.singUpEnd span.diff {color:#ed1c24;}
+.ContSingUpBox h1.singUpEnd a.add, .ContSingUpPopWrap h1 a:hover.add {padding-left:0;font:normal 11px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;text-decoration:none;}
+.ContSingUpBox h2.chktxt {clear:both;padding:0 0 0 13px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;background:url('/member/ob/common/v1/contents/icon_chk_arrow.gif') no-repeat left 2px;}
+.ContSingUpBox .emailTxt {padding:13px 0 0 15px;font:normal 13px/1.4 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;}
+.ContSingUpBox .emailerrorTxt {clear:both;padding-bottom:20px;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.ContSingUpBox .emailerrorTxt a {color:#287cdb;}
+
+.ContSingUpBox.ContSingUpBoxEnd {width:auto;}
+
+.signUpSnsWrap {clear:both;margin-top:40px;background:url('/member/ob/common/v1/contents/singup_sns_bg02.jpg') no-repeat left bottom;overflow:hidden;_zoom:1;}
+.signUpSnsBox {padding:10px 0 10px 20px;background:url('/member/ob/common/v1/contents/singup_sns_bg01.jpg') no-repeat left top;overflow:hidden;_zoom:1;}
+.signUpSnsBox img {margin-right:5px;}
+.signUpSnsBox strong {float:left;padding:6px 0 0 0;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#4c6599;}
+.signUpSnsBox strong.txt {float:left;width:auto;padding-top:0;}
+.signUpSnsBox span {float:left;}
+
+.signup {display:block;margin:12px 0 0 0;padding-bottom:20px;}
+.signup dl {clear:both;width:100%;}
+.signup dl dt {padding:10px 0 0 20px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;word-break:break-all;}
+.signup dl dt label {font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;color:#666;}
+.signup dl dd {position:relative;padding:5px 0 0 20px;}
+.signup dl dd input.text-box {width:93%;height:18px;padding:4px 0 0 3px;border:1px solid #e1e1e1;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.signup dl dd input.input-validation-error {width:93%;height:18px;padding:4px 0 0 3px;border:1px solid #db2626;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;background:#fff5f5;}
+.signup dl dd .code {float:left;margin-top:4px;}
+.signup dl dd .codehere {padding:0 0 5px 0;overflow:hidden;}
+.signup dl dd .codehere a {margin:1px 0 2px 0;}
+.signup dl dd .codehere input.text-box {float:left;width:200px;margin-right:5px;}
+.signup dl dd .codehere input.input-validation-error {float:left;width:200px;margin-right:5px;border:1px solid #db2626;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;background:#fff5f5;}
+.signUpAgreeChkBox {padding:30px 0 30px 0;border-top:1px solid #e1e1e1;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.signUpAgreeChkBox a, .signup .agreeChkBox a:hover {font-weight:normal;color:#287cdb;}
+.signUpAgreeChkBoxPop {padding:30px 0 30px 0;width:400px;border-top:1px solid #e1e1e1;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.signUpAgreeChkBoxPop a, .signup .agreeChkBox a:hover {font-weight:normal;color:#287cdb;}
+.signUpChkBtn {clear:both;position:relative;width:910px;height:100px;}
+.signUpChkBtn a {position:absolute;left:0;top:0;}
+.signUpLoginBtn {clear:both;}
+.signUpLoginBtn a {margin-right:5px;}
+.alertMessageWrap {position:absolute;left:440px;top:8px;_left:420px;width:306px;background:url('/member/ob/common/v1/contents/alertbox_bg02.gif') no-repeat left bottom;}
+.alertMessageBox {width:285px;padding:7px 15px 10px 15px;color:#ff3a3a;line-height:1.2;background:url('/member/ob/common/v1/contents/alertbox_bg01.gif') no-repeat left top;}
+.infoMessageWrap {position:absolute;left:440px;top:8px;_left:420px;width:306px;background:url('/member/ob/common/v1/contents/infotxtbox_bg02.gif') no-repeat left bottom;}
+.infoMessageeBox {width:285px;padding:7px 15px 10px 15px;color:#666;line-height:1.2;background:url('/member/ob/common/v1/contents/infotxtbox_bg01.gif') no-repeat left top;}
+
+.signUpUserInfoWrap {clear:both;margin-top:5px;overflow:hidden;_zoom:1;}
+.signUpUserInfoWrap .signUpSnsBox {background:none;}
+.signUpUserInfoWrap dt {width:150px;padding-left:8px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;background:url('/member/ob/common/v1/contents/list_jum01.gif') no-repeat left 5px;}
+.signUpUserInfoWrap dd {width:600px;padding:7px 0 15px 8px;font:bold 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#db2626;}
+.signUpUserInfoWrap dd span {width:600px;padding-bottom:8px;}
+.signUpUserInfoWrap dd a, .signUpUserInfoWrap dd a:hover {font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;text-decoration:none;}
+.signUpUserInfoWrap dd a.btnStyle02 {float:left;display:block;height:22px;padding:8px 15px 0 15px;border:1px solid #db2626;font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#fafafa;background:url('/member/ob/common/v1/contents/btn_bg02_off.gif') repeat-x;cursor:pointer;}.signUpUserInfoWrap dd a:hover.btnStyle02 {border:1px solid #f72a2a;text-decoration:none;font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#fafafa;background:url('/member/ob/common/v1/contents/btn_bg02_on.gif') repeat-x;cursor:pointer;}
+
+.emilfailUserinfo {clear:both;padding:20px 20px 0 20px;border:1px solid #d4dce9;background:#f7f8fb;}
+.emilfailUserinfo li {padding:0 0 17px 7px;font:normal 13px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;background:url('/member/ob/common/v1/contents/list_jum01.gif') no-repeat left 7px;}
+.emilfailUserinfo li strong {color:#db2626;}
+.emilfailUserinfo li a, .emilfailUserinfo li a:hover {font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;text-decoration:none;}
+
+.emilfailchkinfo {clear:both;padding-top:15px;}
+.emilfailchkinfo li {padding:0 0 0 0;font:normal 13px/1.8 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;}
+.emilfailchkinfo li img.card {margin:3px 0 15px 5px;}
+.emilfailchkinfo li a, .emilfailchkinfo li a:hover {font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;text-decoration:none;}
+
+.singUpGameList {clear:both;margin-top:20px;border-top:1px solid #e1e1e1;background:url('/member/ob/common/v1/contents/singUpGameList_bg.gif') repeat-y;overflow:hidden;_zoom:1;}
+.singUpGameList li {float:left;width:273px;padding:20px 10px 21px 20px;}
+.singUpGameList li .sumimg {float:left;width:110px;}
+.singUpGameList li .sumimg img {border:1px solid #e1e1e1;}
+.singUpGameList li .listConts {float:left;width:160px;padding-top:7px;}
+.singUpGameList li .title {height:35px;padding-bottom:5px;font:bold 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.singUpGameList li .title a, .singUpGameList li .title a:hover {font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;}
+.singUpGameList li .title btn {}
+/* e:singup */
+/* s:login */
+.loginSection {clear:both;padding-left:50px;}
+.loginWrap {float:left;position:relative;width:434px;height:280px;border:1px solid #e1e1e1;background:#fafafa;}
+.loginWrap .loginInputWrap {position:absolute;left:21px;top:18px;width:391px;}
+.loginWrap .loginInputWrap legend {position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;overflow:hidden;}
+.loginWrap .loginInputWrap dl {width:391px;}
+.loginWrap .loginInputWrap dl dt {font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;}
+.loginWrap .loginInputWrap dl dd {}
+.loginWrap .loginInputWrap .btnArae {clear:both;padding:5px 0 5px 0;border-bottom:1px solid #e1e1e1;}
+.loginWrap .loginInputWrap .btnArae .messageInfo {float:left;width:215px;_width:210px;_height:30px;padding:8px 0 0 10px;font:normal 11px/1 Tahoma, Arial, Helvetica, sans-serif;color:#287cdb;}
+.loginWrap .loginInputWrap .btnArae .messageInfo a,.loginWrap .loginInputWrap .btnArae .messageInfo a:hover {font:normal 11px/1 Tahoma, Arial, Helvetica, sans-serif;color:#287cdb;text-decoration:none;}
+.loginWrap .loginInputWrap .btnArae .messageAlret {clear:both;padding-top:4px;font:normal 11px/16px Tahoma, Arial, Helvetica, sans-serif;color:#ed1c24;overflow:hidden;}
+.loginWrap .loginInputWrap .inputText
+	{display:block;width:98%;height:28px;margin:2px 0 10px 0;padding:4px 2px 0 5px;border:1px solid #e1e1e1;font:normal 15px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;vertical-align:top;_width /**/:344px;_height /**/:34px;*margin:1px 0 8px 0;}:root .loginWrap .loginInputWrap .inputText{padding-top:2px;padding-bottom:2px;font:normal 15px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;}
+.loginWrap .loginInputWrap  .txtstyleError
+{display:block;width:98%;height:28px;margin:2px 0 10px 0;padding:4px 2px 0 5px;border:1px solid #db2626;font:normal 15px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;background:#fff5f5;vertical-align:top;_width /**/:344px;_height /**/:34px;*margin:1px 0 8px 0;}:root .loginWrap .loginInputWrap  .txtstyleError{padding-top:2px;padding-bottom:2px;font:normal 15px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;}
+.loginWrap a.btnStyle05 {}
+
+.loginPromotionWrap {float:left;width:302px;padding-left:20px;}
+.loginPromotionWrap img {border:1px solid #e1e1e1;}
+.loginSectionPop {clear:both;padding:20px 0 30px 30px;background:#fff;overflow:hidden;_zoom:1;}
+.loginSectionPop h1 {font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+/* e:login */
+
+.singUpSnsJoin {clear:both;}
+.singUpSnsJoin dt {float:left;width:153px;height:96px;margin-bottom:30px;text-align:center;border-bottom:1px solid #e1e1e1;}
+.singUpSnsJoin dd {float:left;width:757px;height:96px;margin-bottom:30px;border-bottom:1px solid #e1e1e1;}
+.singUpSnsJoin dd strong {font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.singUpSnsJoin dd p {padding:8px 0 9px 0;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+
+.myWcoinView {clear:both;height:62px;margin-bottom:40px;background:url('/member/ob/common/v1/contents/myWcoinWrap_bg.gif') no-repeat;overflow:hidden;_zoom:1;}
+.myWcoinViewfloatinig {float:right;padding:16px 10px 16px 0;}
+.myWcoinView h2 {float:left;padding:4px 27px 0 0;font:bold 18px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#d07c32;background:url('/member/ob/common/v1/contents/menu_arrow.gif') no-repeat right 5px;}
+.myWcoinView ul {float:left;padding-left:15px;}
+.myWcoinView ul li.icon_wcoin_C {float:left;padding:2px 20px 0 30px;font:bold 27px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;background:url('/member/ob/common/v1/contents/icon_C.gif') no-repeat left 2px;}
+.myWcoinView ul li.icon_wcoin_P {float:left;padding:2px 20px 0 30px;font:bold 27px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;background:url('/member/ob/common/v1/contents/icon_P.gif') no-repeat left 2px;}
+
+.memberTabWrap {clear:both;border-bottom:2px solid #de131b;overflow:hidden;_zoom:1;}
+.memberTabWrap li {float:left;padding:1px;border-top:1px solid #dadada;border-left:1px solid #dadada;border-right:1px solid #dadada;}
+.memberTabWrap li a {display:block;padding:9px 28px;font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;background:url('/member/ob/common/v1/contents/account_history_tab_bg_off.gif') repeat-x left top;}
+.memberTabWrap li a:hover {color:#666;text-decoration:none;}
+.memberTabWrap li.on {float:left;padding:10px 28px;border-top:1px solid #de131b;border-left:1px solid #de131b;border-right:1px solid #de131b;font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#fff;background:url('/member/ob/common/v1/contents/account_history_tab_bg_on.gif') repeat-x left top;}
+
+.etcInfoTxt {padding:20px 0 27px 0;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.etcInfoTxt li {color:#666;line-height:18px;}
+.boxCase01 {padding:17px 20px 16px 20px;margin-top:10px;border:1px solid #e1e1e1;background:#fafafa;}
+.boxCase01 li {font:normal 13px/1.4 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.boxCase01 li strong {color:#db2626;}
+.tableTopinfo {clear:both;font:normal 13px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;}
+.tableTopinfo strong {color:#db2626;}
+
+.viewRecordsTxt {width:100%;padding:12px 0;_margin-left:-7px;background:#fafafa;}
+.viewRecordsTxt span {padding:0 5px 0 32px;font-size:13px;color:#666;background:url('/member/ob/common/v1/contents/icon_chk_arrow_g.gif') no-repeat 20px 4px;}
+.viewRecordsTxt a {padding-left:5px;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;}
+
+.historyRecordsWrap {padding:0 20px;}
+.historyRecordsWrap .infoMessage {padding:30px 0 12px 0;}
+
+.terminationInput {padding:0;margin:0;}
+.terminationInput legend {width:100%;padding:12px 0;_margin-left:-7px;border-bottom:1px solid #e1e1e1;background:#fafafa url('/member/ob/common/v1/contents/line_r_g.gif') no-repeat left top;}
+*+html .terminationInput legend {margin-left:-7px;}
+.terminationInput legend span {padding-left:32px;color:#999;background:url('/member/ob/common/v1/contents/icon_chk_arrow_g.gif') no-repeat 20px 2px;}
+.terminationInput li {padding:8px 0 7px 20px;border-bottom:1px solid #e1e1e1;}
+.terminationInput li label {display:block;padding-bottom:5px;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.terminationInput li input.text-box {width:290px;height:18px;padding:4px 0 0 3px;border:1px solid #e1e1e1;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.terminationInput li input.input-validation-error {width:290px;height:18px;padding:4px 0 0 3px;border:1px solid #db2626;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;background:#fff5f5;}
+.terminationInput li textarea {width:570px;height:76px;padding:4px 0 0 3px;border:1px solid #e1e1e1;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.btnAcountTerm {clear:both;padding-left:10px;}
+.btnAcountTerm a {margin-right:5px;}
+
+.selectBoxWrap {clear:both;}
+.selectBoxWrap select {float:left;width:100px;height:22px;margin-right:5px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;}
+.selectBoxWrap a {margin-right:5px;}
+
+.tableStyle01 {clear:both;border-top:2px solid #de131b;}
+.tableStyle01 th {padding:10px 0;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;border-bottom:2px solid #333;background:#fafafa;}
+.tableStyle01 td {padding:13px 0 12px 0;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;text-align:center;border-bottom:1px solid #e1e1e1;}
+.tableStyle01 td.import {text-align:left;padding-left:20px;}
+.history_redeem .tableStyle01 td{font-size:11px;}
+.tableStyle02 {clear:both;}
+.tableStyle02 th {padding:14px 20px 12px 20px;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;text-align:left;vertical-align:top;border-bottom:1px solid #e1e1e1;background:#fafafa;}
+.tableStyle02 th.borderStyle {border-top:2px solid #de131b;}
+.tableStyle02 th img {vertical-align:middle;margin-right:10px;}
+.tableStyle02 th strong {color:#de131b;font-weight:normal;}
+.tableStyle02 td {padding:10px 10px 10px 18px;font:normal 13px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;text-align:left;border-bottom:1px solid #e1e1e1;}
+.tableStyle02 td span {color:#666;}
+.tableStyle02 td label {padding-right:10px;}
+.tableStyle02 td img.nickImg {border:1px solid #e1e1e1;vertical-align:middle;margin-right:10px;}
+.tableStyle02 td.arrayR {padding:10px 20px 10px 0;text-align:right;}
+.tableStyle02 td.arrayR a {font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;}
+.tableStyle02 td.arrayR a:hover {color:#287cdb;}
+.tableStyle02 td.borderStyle {border-top:2px solid #333;}
+.tableStyle02 td input.txtstyle {height:16px;padding:4px 0 0 3px;border:1px solid #e1e1e1;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.tableStyle02 td input.txtstyleCode {height:32px;padding:0 0 0 3px;*height:25px;*padding:7px 0 0 3px;border:1px solid #ed1c24;font:bold 15px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+
+td .emailtxt {float:left;padding:4px 10px 0 0;}
+td .emailtxt img {margin-left:7px;vertical-align:middle;}
+td .vfCode {float:left;padding:9px 10px 0 0;color:#666;}
+td .emailerror {float:left;padding:4px 10px 0 0;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;}
+td .emailerrorMasage {clear:both;padding-top:8px;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;}
+td .emailerrorMasage01 {clear:both;padding:8px 0 0 100px;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;}
+td .emailinfoMasage {clear:both;padding-top:5px;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;}
+td .inputArea {float:left;padding:0 10px 0 0;}
+td .reCodeSend {float:left;padding:18px 0 0 10px;font:bold 11px/1 Tahoma, Arial, Helvetica, sans-serif;color:#287cdb;}
+td .reCodeSend a {font:bold 11px/1 Tahoma, Arial, Helvetica, sans-serif;color:#287cdb;}
+td .reCodeSend a:hover {color:#287cdb;}
+
+.Title_info {clear:both;padding:30px 0 0 0;}
+.Title_info.bg {height:174px;background:url('/member/ob/common/v1/contents/sc_card_img.jpg') no-repeat right 30px;}
+.Title_info h2 {padding-bottom:18px;font:bold 18px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.Title_info p {font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.Title_info p strong {font:normal 13px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.Title_info p strong span {color:#de131b;}
+
+.SC_stepInfo {clear:both;padding:25px 0 25px 12px;border:1px solid #e1e1e1;background:#fafafa;overflow:hidden;_zoom:1;}
+.SC_stepInfo li {float:left;position:relative;width:240px;padding:0 33px 0 25px;font:bold 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#de131b;background:url('/member/ob/common/v1/contents/sc_step_process_div.gif') no-repeat right 55px;}
+.SC_stepInfo li .stepTit {height:25px;font:bold 18px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.SC_stepInfo li .stepinfo_bg01 {width:240px;background:url('/member/ob/common/v1/contents/sc_step_infobg02.gif') no-repeat left bottom;}
+.SC_stepInfo li .stepinfo_bg02 {padding:20px;background:url('/member/ob/common/v1/contents/sc_step_infobg01.gif') no-repeat left top;}
+.SC_stepInfo_txt {clear:both;padding:15px 0 0 0;}
+
+.SC_stepInfo_txt li {font:normal 14px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.SC_stepInfo_txt li.attention {padding:15px 0 0 0;color:#de131b;}
+.sc_sample_img {clear:both;}
+.sc_sample_img .chktxt {clear:both;padding:20px 0 10px 13px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;background:url('/member/ob/common/v1/contents/icon_chk_arrow.gif') no-repeat left 22px;}
+.sc_sample_img p {padding:20px;border:1px solid #e1e1e1;background:#fafafa;}
+
+.default_ol_style {clear:both;padding:10px 10px 20px 40px;margin-top:10px;border:1px solid #e1e1e1;background:#fafafa;}
+.default_ol_style li {list-style:decimal;padding-top:10px;font:normal 13px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;}
+
+.SC_AgreeChk {clear:both;padding:20px 0 30px 0;font:normal 13px/1.5 Arial;}
+.defaultChktxt {clear:both;padding:20px 0 10px 13px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;background:url('/member/ob/common/v1/contents/icon_chk_arrow.gif') no-repeat left 22px;}
+.defaultChktxtList li {padding:5px 0 0 12px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;}
+
+.SC_userData {clear:both;padding:15px 20px;margin-top:20px;border:1px solid #d4dce9;background:#f7f8fb;}
+.SC_userData table th {height:20px;padding:0 7px 0 0;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#4c6599;text-align:left;}
+.SC_userData table td {font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.SC_userData table td span {padding-right:5px;}
+
+.sc_cardInputWrap {padding:0 0 25px 0;}
+.sc_cardInputWrap h1 {height:auto;padding-bottom:35px;font:bold 18px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.sc_cardInputWrap h1 span {color:#ed1c24;}
+.sc_cardInputWrap h2 {height:24px;font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.sc_cardInputWrap .signUpChkBtn a {margin-left:-18%;}
+.sc_cardInputWrap .signUpInputBtn {clear:both;position:relative;width:auto;height:40px;margin-top:10px;}
+.sc_cardInputWrap .signUpInputBtn01 {clear:both;position:relative;width:auto;height:30px;margin-top:10px;}
+.sc_cardInputWrap .signUpInputBtn01 a {margin-right:5px;}
+.sc_cardInputWrap .alertMessage {padding:10px 0 0 0;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;}
+.sc_cardInputWrap .yourInfo {margin-top:0;}
+.sc_cardInputWrap p.info {clear:both;padding:8px 0 30px 0;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;}
+
+/*** s:layer popup ***/
+/* s:Member */
+.ContSingUpPopWrap {clear:both;padding-top:20px;}
+.ContSingUpPopWrap h1 {}
+.ContSingUpPopWrap h1 a.add, .ContSingUpPopWrap h1 a:hover.add {padding-left:20px;font:normal 11px/0.8 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;text-decoration:none;}
+.ContSingUpPopWrap h1.end a.add {padding-left:0;}
+.ContSingUpPopWrap .ContSingUpBox {padding:0 0 0 19px;}
+.ContSingUpPopWrap .signUpSnsWrap {clear:both;margin-top:10px;background:url('/member/ob/common/v1/contents/singup_sns_bg02.jpg') no-repeat left bottom;overflow:hidden;_zoom:1;}
+.ContSingUpPopWrap .signUpAgreeChkBox {margin:0 40px;padding:15px 0 20px 0;border-top:1px solid #e1e1e1;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.ContSingUpPopWrap .signUpAgreeChkBoxPop {margin:0 40px;padding:15px 0 20px 0;border-top:1px solid #e1e1e1;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.signUpChkBtnPop {clear:both;position:relative;height:60px;}
+.signUpChkBtnPop a {position:absolute;left:0;top:0;margin-left:40px;}
+
+.idpw_findWrap {clear:both;padding:20px 19px 0 19px;overflow:hidden;_zoom:1;}
+.idpw_find_tab {clear:both;height:33px;padding:0 0 0 10px;border-bottom:1px solid #e1e1e1;}
+.idpw_find_tab a {display:block;float:left;padding:0 15px 0 10px;font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;background:url('/member/ob/common/v1/contents/menu_div.gif') no-repeat right 2px;}
+.idpw_find_tab a:hover {font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#db2626;text-decoration:none;}
+.idpw_find_tab a.nobg {background:none;}
+.idpw_find_tab a.on {color:#db2626;}
+.idpw_findWrap .signup {display:block;padding:10px 0 20px 0;margin:0 20px 10px 20px;border:1px solid #e1e1e1;background:#fafafa;}
+.idpw_findWrap .signup dl {clear:both;}
+.idpw_findWrap .signup dl dt {padding:9px 0 0 20px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;word-break:break-all;}
+.idpw_findWrap .signup dl dd {position:relative;padding:3px 0 1px 20px;}
+.idpw_findWrap .signup dl dd .code {float:left;margin-top:5px;}
+.idpw_findWrap .signup dl dd .codehere {padding:0 0 0 0;}
+.idpw_findWrap .signup dl dd .codehere a {margin:1px 0 2px 0;}
+.idpw_findWrap .signup .emailCurrent {padding:0 0 18px 0;margin:10px 20px;border-bottom:1px solid #e1e1e1;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.idpw_findWrap .signup .emailCurrent strong {color:#333;font-weight:normal;}
+.idpw_findWrap .signUpChkBtn {width:auto;height:60px;margin-top:20px;}
+.idpw_findWrap .signUpChkBtn a {margin-left:20px;}
+.idpw_findWrap .signUpEmailBtn {padding:0 0 30px 20px;}
+.idpw_findWrap .signUpChkBtnArray .signUpChkBtn a {margin-left:20px;}
+.idpw_findWrap h2.chktxt {clear:both;padding:0 0 0 13px;margin:0 20px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;background:url('/member/ob/common/v1/contents/icon_chk_arrow.gif') no-repeat left 2px;}
+.idpw_findWrap h2.default {clear:both;padding:0 0 0 20px;font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.idpw_findWrap .emailTxt {padding:13px 0 0 15px;margin:0 20px;font:normal 13px/1.4 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;}
+
+.idpw_findWrap .yourInfo {clear:both;padding:13px 20px 14px 20px;margin:10px 20px 0 20px;color:#d07c32;line-height:1.8;border:1px solid #ffe094;background:#fffae1;overflow:hidden;}
+.idpw_findWrap .yourInfo .newEmail {float:left;margin-right:10px;}
+.idpw_findWrap .yourInfo a {float:left;}
+.idpw_findWrap .alertMessage {clear:both;padding:8px 0 9px 20px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;overflow:hidden;}
+
+/*
+.sc_cardPopWrap {padding:25px 30px;}
+.sc_cardPopWrap h1 {font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.sc_cardPopWrap .signUpChkBtn {width:auto;height:45px;margin-top:10px;}
+.sc_cardPopWrap .signUpChkBtn a {margin-left:0;}
+*/
+.sc_cardPopWrap {padding:25px 30px;}
+.sc_cardPopWrap h1 {font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.sc_cardPopWrap .signUpChkBtn {width:auto;height:45px;margin-top:10px;}
+.sc_cardPopWrap .signUpChkBtn a {margin-left:0;}
+.sc_cardPopWrap .signUpInputBtn {clear:both;position:relative;width:auto;height:40px;margin-top:10px;}
+.sc_cardPopWrap .signUpInputBtn a {position:absolute;left:50%;top:0;margin-left:-12%;}
+.sc_cardPopWrap h2.info {clear:both;padding:0 0 0 10px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;background:url('/member/ob/common/v1/contents/list_jum01.gif') no-repeat left 5px;}
+.sc_cardPopWrap h2 {height:24px;font:bold 14px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;}
+.sc_cardPopWrap .signUpInputBtn01 {clear:both;position:relative;width:auto;height:30px;margin-top:10px;}
+.sc_cardPopWrap .signUpInputBtn01 a {margin-right:5px;}
+.sc_cardPopWrap .alertMessage {padding:10px 0 0 0;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;}
+.sc_cardPopWrap .yourInfo {margin-top:0;}
+.sc_cardPopWrap p.info {clear:both;padding:8px 0 30px 0;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;}
+
+.sc_cardPopInputBox {clear:both;}
+.sc_cardPopInputBox th {padding:10px 20px 10px 20px;border-bottom:1px solid #e1e1e1;background:#fafafa;}
+.sc_cardPopInputBox th strong {float:left;font:normal 32px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#db2626;}
+.sc_cardPopInputBox th p {float:left;padding:1px 15px 0 0;text-align:left;}
+.sc_cardPopInputBox th span {display:block;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#666;}
+.sc_cardPopInputBox th span.codetxt {color:#333;}
+.sc_cardPopInputBox th.borderStyle {border-top:2px solid #de131b;}
+.sc_cardPopInputBox td {padding:10px 10px 10px 30px;border-bottom:1px solid #e1e1e1;text-align:left;}
+.sc_cardPopInputBox td input.sc_txtstyle {width:50px;height:28px;padding:5px 0 0 0;border:1px solid #e1e1e1;font:bold 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;text-align:center;}
+.sc_cardPopInputBox td input.input-validation-error {width:50px;height:28px;padding:5px 0 0 0;border:1px solid #db2626;font:bold 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#333;text-align:center;background:#fff5f5;}
+.sc_cardPopInputBox td img {vertical-align:middle;margin:0 15px;}
+.sc_cardPopInputBox td.borderStyle {border-top:2px solid #333;}
+
+.yourInfo {clear:both;padding:13px 20px 14px 20px;margin-top:10px;color:#d07c32;line-height:1.8;border:1px solid #ffe094;background:#fffae1;}
+.yourInfo strong.email {color:#287cdb;}
+.yourInfo strong.date {color:#333;}
+.infoMessage {clear:both;padding:10px 0 12px 20px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;}
+.infoMessage li {padding:0 0 0 8px;font:normal 13px/1.5 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;background:url('/member/ob/common/v1/contents/list_jum01.gif') no-repeat left 7px;}
+.alertMessage {clear:both;padding:0 20px 0 20px;font:normal 13px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;overflow:hidden;}
+.alertMessage li {padding:0;}
+.alertMessageAcount {clear:both;padding:6px 20px 7px 10px;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;overflow:hidden;}
+.alertMessageSCEnd {clear:both;padding:0 20px 0 0;font:normal 11px/1 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#ff3a3a;overflow:hidden;}
+.messageBox {padding:17px 20px 15px 20px;margin:20px 20px 0 20px;border:1px solid #d4dce9;background:#f7f8fb;font:bold 14px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#4c6599;}
+.messageBox li.special {font:bold 14px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#4c6599;}
+.messageBox li {padding-bottom:6px;font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#999;}
+.messageBox li a, .messageBox li a:hover {font:normal 13px/1.2 Arial, Tahoma, 'Segoe UI', 'Lucida Sans Unicode',  sans-serif;color:#287cdb;}
+/* e:Member */
+
+/*** e:layer popup ***/
+/* s:my ticket 20120710 */
+.tableStyle01 td a.hiddenTxt {display:block;width:250px;padding-left:10px;line-height:1.2;height:18px;text-align:left;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;} *+html .tableStyle01 td a.hiddenTxt{white-space:nowrap}
+.tableStyle01 .insuff, .tableStyle02 .insuff {color:#ff3a3a;}
+.tableStyle01 .ing, .tableStyle02 .ing {color:#287cdb;}
+.tableStyle02 .fileDown {line-height:1.5;}
+.tableStyle02 td .fileAdd {width:700px; height:65px; margin-top:8px;border:1px solid #e5e5e5;}
+.tableStyle02 td .fileAddEtc {width:600px; text-align:right; padding-top:15px;}
+.tableStyle02 td .fileAddEtc img {vertical-align:top; padding-left:5px; margin-top:-7px;}
+.tableStyle02 tr.tableSpace th, tr.tableSpace td {height:10px;border-right:0;padding:0;margin:0;font-size:0;line-height:0;background:none;}
+.tableStyle02 tr.tableSpace01 th, tr.tableSpace01 td {height:0;border-right:0;padding:0;margin:0;font-size:0;line-height:0;background:none;}
+.tableStyle02 tr.tableSpace01 th {border-top:2px solid #de131b;}
+.tableStyle02 tr.tableSpace01 td {border-top:2px solid #333;}
+.tableStyle02 tr.tableSpace02 th, tr.tableSpace02 td {border-bottom:1px solid #f9aaaa;border-right:0;padding:10px 0 10px 0;margin:0;font-size:0;line-height:0;background:none;}
+.tableStyle02 tr.ticketInfoUpdate th {background:#fffafa;color:#cc3333;border-bottom:1px solid #fde6e6;}
+.tableStyle02 tr.ticketInfoUpdate td {border-bottom:1px solid #fde6e6;}
+.tableStyle02 tr.ticketInfoResponse th {background:#fffafa;color:#cc3333;border-bottom:1px solid #f9aaaa;}
+.tableStyle02 tr.ticketInfoResponse td {border-bottom:1px solid #f9aaaa;word-break:break-all;word-wrap:break-word;}
+.tableStyle02 tr td div.break {width:650px;word-break:break-all;word-wrap:break-word;}
+/* e:my ticket 20120710 */
+
+/* s:ifm sing up - style01  */
+.SingUpIframeWrap {width:270px;margin:0 auto;}
+.SingUpIframeWrap .ContSingUpBox {width:250px;margin:0 auto;}
+.SingUpIframeWrap .signup {padding:0;margin:0;margin-bottom:10px;}
+.SingUpIframeWrap .error{display:none;color:#ff2a0e;padding:0 0 5px 8px;}
+.SingUpIframeWrap .error a {color:#ff2a0e;}
+.SingUpIframeWrap input {width:230px;height:30px;padding:5px 10px 0 10px;line-height:30px;border:0;margin:0;background:url('/member/ifm_singup/ifm_service_input_bg.png') no-repeat;font:normal 14px tahoma, Arial, Helvetica;color:#ddd;}
+.SingUpIframeWrap input.chk {width:13px;height:13px;padding:0;margin-right:5px;line-height:normal;border:0;background:none;}
+.SingUpIframeWrap .inputList {clear:both;position:relative;display:inline-block;padding:5px 0;}
+.SingUpIframeWrap .inputDesc {position:absolute;left:10px;top:12px;font:normal 14px/1.2 tahoma, Arial, Helvetica;color:#ddd;}
+.SingUpIframeWrap .InputHasFocus {background:url('/member/ifm_singup/ifm_service_input_bg_on.png') no-repeat !important;}
+.SingUpIframeWrap .InputHasError {background:url('/member/ifm_singup/ifm_service_input_bg_error.png') no-repeat !important;}
+.SingUpIframeWrap .signUpAgreeChkBoxPop {width:250px;border-top:0;padding:0 0 25px 0;margin:0;}
+.SingUpIframeWrap .signUpAgreeChkBoxPop a {font-weight:bold;color:#ffcf00;text-decoration:underline;}
+.SingUpIframeWrap .signUpAgreeChkBoxPop label {display:inline;font:normal 13px/1.2 tahoma, Arial, Helvetica;color:#ddd;}
+.SingUpIframeWrap .signUpChkBtnPop {padding:0;margin:0;text-align:center;}
+.SingUpIframeWrap .signUpChkBtnPop a {width:250px;height:37px;padding:18px 0 0 0;margin:0;font:bold 15px/1.2 Arial, Helvetica, sans-serif;color:#fff;text-decoration:none;background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style01.png') no-repeat;}
+.SingUpIframeWrap .signUpChkBtnSns {padding:0;margin:0;text-align:center;}
+.SingUpIframeWrap .signUpChkBtnSns a {display:block;width:250px;height:37px;padding:18px 0 0 0;margin:0;font:bold 15px/1.2 Arial, Helvetica, sans-serif;color:#fff;text-decoration:none;background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style01.png') no-repeat;}
+.SingUpIframeWrap .ContSingUpBox .fb_box {padding-bottom:5px;}
+.SingUpIframeWrap .ContSingUpBox .fb_box a {display:block;width:205px;height:25px;padding:10px 0 0 45px;font:bold 13px/1.2 tahoma, Arial, Helvetica;color:#fff;text-decoration:none;background:url('/member/ifm_singup/ifm_service_fb_bg.png') no-repeat;}
+.SingUpIframeWrap .ContSingUpBox .fb_icon {padding:0 0 5px 45px;font:normal 13px/1.2 tahoma, Arial, Helvetica;color:#ddd;background:url('/member/ifm_singup/ifm_service_fb_icon.png') no-repeat left top;}
+.SingUpIframeWrap h1 {font:bold 22px/1.2 tahoma, Arial, Helvetica;color:#e90003;}
+.SingUpIframeWrap .welcomtxt {padding:5px 0 15px 0;font:normal 14px/1.2 tahoma, Arial, Helvetica;color:#ddd;}
+.SingUpIframeWrap .welcomtxt a {font:bold 14px/1.2 tahoma, Arial, Helvetica;color:#ffcf00;text-decoration:underline;}
+.SingUpIframeWrap .btn_box {padding-bottom:10px;}
+.SingUpIframeWrap .btn_box a {display:block;width:250px;height:37px;padding:18px 0 0 0;margin:0;font:bold 15px/1.2 Arial, Helvetica, sans-serif;color:#fff;text-decoration:none;text-align:center;}
+.SingUpIframeWrap .btn_box a.download {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style01.png') no-repeat}
+.SingUpIframeWrap .btn_box a.homepage {color:#222;Background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style_all.png') no-repeat}
+.SingUpIframeWrap .btn_box a.main_re {color:#222;background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style_all.png') no-repeat}
+.SingUpIframeWrap .user_access {padding:0 0 12px 10px;font:normal 13px/1.2 tahoma, Arial, Helvetica;color:#ddd;background:url('/member/ifm_singup/ifm_icon_list.gif') no-repeat 0 5px}
+.SingUpIframeWrap .user_access ol {padding:10px 0 0 16px;font:normal 13px/1.2 tahoma, Arial, Helvetica;color:#aaa;}
+.SingUpIframeWrap .user_access ol li {list-style:decimal;}
+.SingUpIframeWrap .user_info_box {padding:5px 0 20px;background:url('/member/ifm_singup/ifm_service_end_info_bg_top.png') no-repeat left top;}
+.SingUpIframeWrap .user_info_conts {width:230px;padding:0 10px 11px 10px;background:url('/member/ifm_singup/ifm_service_end_info_bg_bottom.png') no-repeat left bottom;}
+.SingUpIframeWrap .user_info_conts dl {font:normal 13px/1.2 tahoma, Arial, Helvetica;background:url('/member/ifm_singup/irm_user_info_conts_line.gif') no-repeat 0 44px;}
+.SingUpIframeWrap .user_info_conts dt {padding:5px 0 0 20px;color:#aaa;background:url('/member/ifm_singup/ifm_icon_jum.gif') no-repeat 10px 11px;}
+.SingUpIframeWrap .user_info_conts dd {width:210px;padding:0 0 14px 20px;font-size:14px;color:#ffcf00;word-break:break-all;}
+.SingUpIframeWrap .user_info_conts .btn a {display:block;width:230px;height:20px;padding-top:5px;font:bold 13px/1.2 tahoma, Arial, Helvetica;color:#333;text-align:center;text-decoration:none;background:url('/member/ifm_singup/ifm_btn_email_bg.gif') no-repeat;}
+.SingUpIframeWrap .ContSingUpBox .alertMessageWrap {position:static;width:250px;padding-top:15px;margin-top:5px;font-size:0;line-height:0;background:url('/member/ifm_singup/ifm_service_message_box_top.png') no-repeat left top;}
+.SingUpIframeWrap .ContSingUpBox .alertMessageBox {width:230px;padding:0 10px 10px 10px;font:normal 11px/1.2 tahoma, Arial, Helvetica;color:#cb0f1e;background:url('/member/ifm_singup/ifm_service_message_box_bottom.png') no-repeat left bottom;}
+.SingUpIframeWrap .ContSingUpBox .infoMessageWrap {position:static;width:250px;padding-top:15px;margin-top:5px;font-size:0;line-height:0;background:url('/member/ifm_singup/ifm_service_message_box_top.png') no-repeat left top;}
+.SingUpIframeWrap .ContSingUpBox .infoMessageeBox {width:230px;padding:0 10px 10px 10px;font:normal 11px/1.2 tahoma, Arial, Helvetica;color:#666;background:url('/member/ifm_singup/ifm_service_message_box_bottom.png') no-repeat left bottom;}
+
+.SingUpIframeWrap.ifr_style01 .signUpChkBtnPop a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style01.png') no-repeat;}
+.SingUpIframeWrap.ifr_style01 .signUpChkBtnSns a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style01.png') no-repeat;}
+.SingUpIframeWrap.ifr_style01 .btn_box a.download {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style01.png') no-repeat}
+.SingUpIframeWrap.ifr_style02 .signUpChkBtnPop a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style02.png') no-repeat;}
+.SingUpIframeWrap.ifr_style02 .signUpChkBtnSns a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style02.png') no-repeat;}
+.SingUpIframeWrap.ifr_style02 .btn_box a.download {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style02.png') no-repeat}
+.SingUpIframeWrap.ifr_style03 .signUpChkBtnPop a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style03.png') no-repeat;}
+.SingUpIframeWrap.ifr_style03 .signUpChkBtnSns a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style03.png') no-repeat;}
+.SingUpIframeWrap.ifr_style03 .btn_box a.download {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style03.png') no-repeat}
+.SingUpIframeWrap.ifr_style04 .signUpChkBtnPop a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style04.png') no-repeat;}
+.SingUpIframeWrap.ifr_style04 .signUpChkBtnSns a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style04.png') no-repeat;}
+.SingUpIframeWrap.ifr_style04 .btn_box a.download {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style04.png') no-repeat}
+.SingUpIframeWrap.ifr_style05 .signUpChkBtnPop a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style05.png') no-repeat;}
+.SingUpIframeWrap.ifr_style05 .signUpChkBtnSns a {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style05.png') no-repeat;}
+.SingUpIframeWrap.ifr_style05 .btn_box a.download {background:url('/member/ifm_singup/ifm_service_btn_submit_bg_style05.png') no-repeat}
