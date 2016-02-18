@@ -1,0 +1,11 @@
+{% extends 'layout2.twig' %}
+{% block content %}
+  {{ form_widget(form) }}
+{% endblock %}
+
+{% block scripts %}
+<script src="//cdn.ckeditor.com/4.5.7/basic/ckeditor.js"></script>
+<script type="text/javascript">
+  CKEDITOR.replace('main-content');
+</script>
+{% endblock %}

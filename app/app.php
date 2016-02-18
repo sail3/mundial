@@ -17,6 +17,7 @@ $app->register(new Silex\Provider\ValidatorServiceProvider());
 
 $app['debug'] = TRUE;
 $app->get("/", "MUNDIAL\\Controller\\MainController::index");
+$app->get("category", "MUNDIAL\\Controller\\MainController::categoryList");
 
 
 return $app;
