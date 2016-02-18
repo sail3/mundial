@@ -12,3 +12,9 @@ body {
   margin: 0 auto;
   display: block;
 }
+.register-area{
+  background: #fafafa;
+}
+.copyright {
+  font-size: 9px;
+}

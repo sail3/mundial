@@ -1,63 +1,86 @@
 {% extends 'layout2.twig' %}
 {% block content %}
-<div class="row">
+  <div class="row">
+    <div class="container">
+      <div class="col-md-8">
 
-  <div class="main-logo"></div>
-  <div id="form-wrapper" class="col-md-8">
-    {{ form_start(form) }}
-      {{ form_errors(form) }}
-      <div class="input-group">
-        <!-- {{ form_label(form.username)}} -->
-        {{ form_errors(form.username)}}
-        {{ form_widget(form.username)}}
+        <!-- </div> -->
+        <div class="main-logo"></div>
+        <div class="register-area">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h1>REGISTRAR</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="social-blocks col-md-6">
+                Siguenos en nuestras redes sociales.
+              </div>
+              <div id="form-wrapper" class="col-md-6">
+                <p>Crear una cuenta de MuMundial.com</p>
+                {{ form_start(form) }}
+                {{ form_errors(form) }}
+                <div class="input-group">
+                  <!-- {{ form_label(form.username)}} -->
+                  {{ form_errors(form.username)}}
+                  {{ form_widget(form.username)}}
+                </div>
+                <div class="input-group">
+                  <!-- {{ form_label(form.password)}} -->
+                  {{ form_errors(form.password.first)}}
+                  {{ form_widget(form.password.first)}}
+                </div>
+                <div class="input-group">
+                  {{ form_errors(form.password.second)}}
+                  {{ form_widget(form.password.second)}}
+                </div>
+                <div class="input-group">
+                  <!-- {{ form_label(form.email)}} -->
+                  {{ form_errors(form.email)}}
+                  {{ form_widget(form.email)}}
+                </div>
+                <div class="input-group">
+                  <!-- {{ form_label(form.country)}} -->
+                  {{ form_errors(form.country)}}
+                  {{ form_widget(form.country)}}
+                </div>
+                <div class="input-group">
+                  <!-- {{ form_label(form.sex)}} -->
+                  {{ form_errors(form.sex)}}
+                  {{ form_widget(form.sex)}}
+                </div>
+                <div class="input-group">
+                  <!-- {{ form_label(form.secretQustion)}} -->
+                  {{ form_errors(form.secretQustion)}}
+                  {{ form_widget(form.secretQustion)}}
+                </div>
+                <div class="input-group">
+                  <!-- {{ form_label(form.secretAnswer)}} -->
+                  {{ form_errors(form.secretAnswer)}}
+                  {{ form_widget(form.secretAnswer)}}
+                </div>
+                <div class="input-group">
+                  {{ form_errors(form.terms)}}
+                  {{ form_widget(form.terms)}}
+                  {{ form_label(form.terms)}}
+                </div>
+                <div class="input-group">
+                  {{ form_widget(form.save)}}
+                </div>
+                {{ form_start(form) }}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <span class="copyright col-md-10 col-md-offset-1">MuMundial, Inc. Global Digital Entertainment Leader COPYRIGHTⓒ IGC, INC. ALL RIGHTS RESERVED.</span>
+          </div>
+        </div>
       </div>
-      <div class="input-group">
-        <!-- {{ form_label(form.password)}} -->
-        {{ form_errors(form.password.first)}}
-        {{ form_widget(form.password.first)}}
-      </div>
-      <div class="input-group">
-        {{ form_errors(form.password.second)}}
-        {{ form_widget(form.password.second)}}
-      </div>
-      <div class="input-group">
-        <!-- {{ form_label(form.email)}} -->
-        {{ form_errors(form.email)}}
-        {{ form_widget(form.email)}}
-      </div>
-      <div class="input-group">
-        <!-- {{ form_label(form.country)}} -->
-        {{ form_errors(form.country)}}
-        {{ form_widget(form.country)}}
-      </div>
-      <div class="input-group">
-        <!-- {{ form_label(form.sex)}} -->
-        {{ form_errors(form.sex)}}
-        {{ form_widget(form.sex)}}
-      </div>
-      <div class="input-group">
-        <!-- {{ form_label(form.secretQustion)}} -->
-        {{ form_errors(form.secretQustion)}}
-        {{ form_widget(form.secretQustion)}}
-      </div>
-      <div class="input-group">
-        <!-- {{ form_label(form.secretAnswer)}} -->
-        {{ form_errors(form.secretAnswer)}}
-        {{ form_widget(form.secretAnswer)}}
-      </div>
-      <div class="input-group">
-        {{ form_errors(form.terms)}}
-        {{ form_widget(form.terms)}}
-        {{ form_label(form.terms)}}
-      </div>
-      <div class="input-group">
-        {{ form_widget(form.save)}}
-      </div>
-    {{ form_start(form) }}
+    </div>
   </div>
-</div>
 {% endblock %}
 
 {% block styles %}
-<link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
 {% endblock %}

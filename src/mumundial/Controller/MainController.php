@@ -50,7 +50,6 @@ class MainController
                 'choices' => array(
                   'Male'=>'male',
                   'Female'=>'female',
-                  'Indeterminado'=>'unsex',
                 ),
                 'expanded' => true
               ))
