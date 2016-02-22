@@ -85,29 +85,47 @@ class MainController
     ));
   }
 
-  public function categoryList(Application $app, Request $request)
+  public function categoryCreate(Application $app, Request $request)
   {
     $categoryModel = new CategoryModel($app);
-    dump($categoryModel->retrieveAll());
-    $form = $app['form.factory']->createBuilder(CategoryForm::class, new CategoryForm())
+    $form = $app['form.factory']->createBuilder(CategoryForm::class)
+              ->setAction('categoryRegister')
               ->getForm();
-    // $form = $app['form.factory']->createBuilder()
-    // ->add("title", tp\TextType::class,array(
-    //   'attr' => array(
-    //     'placeholder' => 'Titulo',
-    //   )
-    // ))
-    // ->add("description", tp\TextareaType::class, array(
-    //   'attr' => array(
-    //     'placeholder' => 'Descripcion',
-    //     'class' => 'ckeditor'
-    //   )
-    // ))
-    // ->add("enable", tp\ChoiceType::class)
-    // ->add("save", tp\SubmitType::class, array('label' => 'Guardar'))
-    // ->getForm();
+    $form->handleRequest($request);
+    if ($form->isValid()) {
+      $data = $form->getData();
+      dump($data);
+      $categoryModel->save($data);
+      return $app->redirect("/");
+    }
     return $app['twig']->render('categoryForm.twig', array(
       'form' => $form->createView(),
     ));
+  }
+  public function categoryView(Application $app, Request $request, $idCategory) {
+    $categoryModel = new CategoryModel($app);
+    $valores = $categoryModel->retrieve($idCategory)[0];
+    dump($valores);
+    $valores['description'] = ($valores['description']);
+    return $app['twig']->render('categoryViewFull.twig', array(
+      'category' => $valores,
+    ));
+  }
+  public function categoryList(Application $app, Request $request){
+    $categoryModel = new CategoryModel($app);
+    $data = $categoryModel->retrieveAll();
+    return $app['twig']->render('categoryView.twig', array(
+      'categoryList' => $data,
+    ));
+  }
+  public function categoryDelete(Application $app, Request $request, $idCategory) {
+    $categoryModel = new CategoryModel($app);
+    $categoryModel->delete($idCategory);
+    return $app->redirect("/category");
+  }
+
+  public function theme(Application $app, Request $request)
+  {
+    return $app['twig']->render('user.twig');
   }
 }

@@ -1,0 +1,15 @@
+{% extends 'layout2.twig' %}
+{% block content %}
+  <div class="center-block">
+    <h2>
+      {{ category.title }}
+    </h2>
+    {% if category.enable == 0 %}
+    <span class="bg-success">Habilitado</span>
+    {% else %}
+    <span class="bg-danger">Deshabilitado</span>
+    {% endif %}
+    <hr>
+    <p class="lead">{{ category.description }}</p>
+  </div>
+{% endblock %}

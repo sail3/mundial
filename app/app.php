@@ -18,6 +18,11 @@ $app->register(new Silex\Provider\ValidatorServiceProvider());
 $app['debug'] = TRUE;
 $app->get("/", "MUNDIAL\\Controller\\MainController::index");
 $app->get("category", "MUNDIAL\\Controller\\MainController::categoryList");
+$app->get("category/{idCategory}", "MUNDIAL\\Controller\\MainController::categoryView");
+$app->get("categoryRegister", "MUNDIAL\\Controller\\MainController::categoryCreate");
+$app->post("categoryRegister", "MUNDIAL\\Controller\\MainController::categoryCreate");
+$app->get("categoryDelete/{idCategory}", "MUNDIAL\\Controller\\MainController::categoryDelete");
 
+$app->get("theme", "MUNDIAL\\Controller\\MainController::theme");
 
 return $app;

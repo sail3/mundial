@@ -1,0 +1,8 @@
+{% extends 'layout2.twig' %}
+{% block content %}
+  {% for category in categoryList %}
+    <div class="well">
+      {% include 'categoryViewItem.twig' %}
+    </div>
+  {% endfor %}
+{% endblock %}

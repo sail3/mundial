@@ -3,7 +3,7 @@ namespace MUNDIAL\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionResolver\OptionResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type as tp;
 
 /**
@@ -14,7 +14,7 @@ class CategoryForm extends AbstractType
   public function buildForm(FormBuilderInterface $builder, array $options) {
     return $builder
             // ->add('title')
-            ->add("titulo", tp\TextType::class,array(
+            ->add("title", tp\TextType::class,array(
               'attr' => array(
                 'placeholder' => 'Titulo',
               )
@@ -29,15 +29,18 @@ class CategoryForm extends AbstractType
             ))
             ->add("enable", tp\ChoiceType::class, array(
               'choices' => array(
-                'Male'=>'male',
-                'Female'=>'female',
+                'Activado'=>'1',
+                'Desactivado'=>'0',
               ),
+              'label' => 'Habilidado',
               'expanded' => true
             ))
             ->add("save", tp\SubmitType::class, array('label' => 'Guardar'));
   }
-  public function __get($str)
+  public function configureOptions(OptionsResolver $resolver)
   {
-    return "";
+    $resolver->setDefaults(array(
+      'data_class' => 'MUNDIAL\Entity\Category',
+    ));
   }
 }

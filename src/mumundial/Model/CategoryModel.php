@@ -2,6 +2,7 @@
 namespace MUNDIAL\Model;
 
 use Silex\Application;
+use MUNDIAL\Entity\Category;
 /**
  * Modelo para la tabla Category.
  */
@@ -26,13 +27,13 @@ class CategoryModel {
     $statement->execute();
     return $statement->fetchAll();
   }
-  public function insert($title, $description)
+  public function save(Category $category)
   {
     $sql = "INSERT INTO Category (title, description, enable) values (?,?,?)";
     $statement = $this->database->prepare($sql);
-    $statement->bind(1, $title);
-    $statement->bind(2, $description);
-    $statement->bind(3,1);
+    $statement->bindValue(1, $category->getTitle());
+    $statement->bindValue(2, $category->getDescription());
+    $statement->bindValue(3, $category->isEnable());
     $statement->execute();
   }
   public function delete($idCategory)
@@ -42,14 +43,13 @@ class CategoryModel {
     $statement->bindValue(1, $idCategory);
     $statement->execute();
   }
-  public function udate($idCategory, $title, $description, $enable)
+  public function update(Category $category)
   {
-    $sql = "UPDATE Category set idCategory=?, title=?, description=?, enable=? where idCategory =?";
-    $statement->bindValue(1, $idCategory);
-    $statement->bindValue(2, $title);
-    $statement->bindValue(3, $description);
-    $statement->bindValue(4, $enable);
-    $statement->bindValue(5, $isCategory);
+    $sql = "UPDATE Category set title=?, description=?, enable=? where idCategory =?";
+    $statement->bindValue(1, $category->getTitle());
+    $statement->bindValue(2, $category->getDescription());
+    $statement->bindValue(3, $category->hasEnable());
+    $statement->bindValue(4, $category->getIdCategory());
     $statement->execute();
   }
 }
